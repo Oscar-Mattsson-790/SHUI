@@ -1,14 +1,13 @@
-describe("Posting a Message", () => {
-  it("should allow a user to post a new message and display it", () => {
-    const testMessage = "This is a test message";
-    const testAuthor = "TestUser";
-
-    cy.visit("http://localhost:5173/SHUI/post");
-    cy.get('input[placeholder="Användarnamn"]').type(testAuthor);
-    cy.get('input[placeholder="Skriv ett meddelande"]').type(testMessage);
-    cy.get("form").submit();
-
-    cy.get(".Message").should("contain", testMessage);
-    cy.get(".Message").should("contain", testAuthor);
+describe("Post Message Test", () => {
+  it("should allow a user to post a message", () => {
+    cy.visit("/");
+    cy.get(".write-msg-icon").click();
+    cy.get(".username-input").type("TestUser");
+    cy.get(".text-input").type("This is a test message");
+    cy.get(".submit-button").click();
+    cy.get(".message")
+      .last()
+      .should("contain", "This is a test message")
+      .and("contain", "TestUser");
   });
 });
