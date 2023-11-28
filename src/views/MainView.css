@@ -1,10 +1,10 @@
 .MainView {
-  width: 90%;
-  max-width: 600px; /* Set max-width for large screens */
-  background: #122340; /* Darker blue */
+  width: 100%;
+  max-width: 600px;
+  background: #122340;
   border-radius: 8px;
-  overflow: hidden; /* Ensures the child components don't overflow */
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  height: 80vh; /* Adjust based on your preference */
+  height: 80vh;
 }

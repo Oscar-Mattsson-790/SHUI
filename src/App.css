@@ -1,6 +1,6 @@
 .App {
   font-family: "Arial", sans-serif;
-  background-color: #091540; /* Dark blue background */
+  background-color: #091540;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -8,11 +8,34 @@
 }
 
 .Container {
-  height: 90vh; /* Adjust based on your preference */
+  height: 90vh;
   width: 100%;
-  max-width: 400px; /* Adjust the max-width to match the screenshot */
+  max-width: 400px;
   display: flex;
   flex-direction: column;
-  background-color: #131c21; /* Container background */
+  background-color: #131c21;
   border-radius: 8px;
+}
+
+.Nav {
+  position: fixed;
+  top: 0;
+  max-width: 400px;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  margin-top: 10px;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.Nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0 15px;
+}
+
+.Nav a:hover {
+  background-color: #555;
 }
