@@ -1,0 +1,18 @@
+.App {
+  font-family: "Arial", sans-serif;
+  background-color: #091540; /* Dark blue background */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Container {
+  height: 90vh; /* Adjust based on your preference */
+  width: 100%;
+  max-width: 400px; /* Adjust the max-width to match the screenshot */
+  display: flex;
+  flex-direction: column;
+  background-color: #131c21; /* Container background */
+  border-radius: 8px;
+}

@@ -1,0 +1,22 @@
+.MessageInput {
+  background-color: #122340; /* Darker blue */
+  padding: 10px;
+  display: flex;
+}
+
+.MessageInput input {
+  flex-grow: 1;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+}
+
+.MessageInput button {
+  padding: 10px 20px;
+  background-color: #eb4034; /* Red color for send button */
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
