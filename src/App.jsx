@@ -1,21 +1,21 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import MainView from "./components/MainView";
-import PostMessage from "./components/PostMessage";
-import EmptyState from "./components/EmptyState";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainView from "./views/MainView";
+import PostMessage from "./components/PostMessage/PostMessage";
+import EmptyState from "./components/EmptyState/EmptyState";
 import "./App.css";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div className="App">
-        <Switch>
-          <Route path="/" exact component={MainView} />
-          <Route path="/post" component={PostMessage} />
-          <Route path="/empty" component={EmptyState} />
-          // Add more routes as needed
-        </Switch>
+        <Routes>
+          <Route path="/SHUI" element={<MainView />} />
+          <Route path="/SHUI/post" element={<PostMessage />} />
+          <Route path="/SHUI/empty" element={<EmptyState />} />
+        </Routes>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
